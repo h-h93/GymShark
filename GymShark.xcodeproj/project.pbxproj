@@ -10,12 +10,25 @@
 		67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */; };
 		67D1EC3F2C6E37A700A2A2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */; };
 		67D1EC412C6E37A700A2A2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC402C6E37A700A2A2B6 /* ViewController.swift */; };
-		67D1EC442C6E37A700A2A2B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67D1EC432C6E37A700A2A2B6 /* Base */; };
 		67D1EC462C6E37A800A2A2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */; };
 		67D1EC492C6E37A800A2A2B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67D1EC482C6E37A800A2A2B6 /* Base */; };
 		67D1EC542C6E37A800A2A2B6 /* GymSharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC532C6E37A800A2A2B6 /* GymSharkTests.swift */; };
 		67D1EC5E2C6E37A800A2A2B6 /* GymSharkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC5D2C6E37A800A2A2B6 /* GymSharkUITests.swift */; };
 		67D1EC602C6E37A800A2A2B6 /* GymSharkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC5F2C6E37A800A2A2B6 /* GymSharkUITestsLaunchTests.swift */; };
+		67D1EC732C6E3DD100A2A2B6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC722C6E3DD100A2A2B6 /* NetworkManager.swift */; };
+		67D1EC752C6E45A500A2A2B6 /* GymsharkProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC742C6E45A500A2A2B6 /* GymsharkProducts.swift */; };
+		67D1EC772C6E49B200A2A2B6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC762C6E49B200A2A2B6 /* Constants.swift */; };
+		67D1EC792C6E4A6000A2A2B6 /* GSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC782C6E4A6000A2A2B6 /* GSError.swift */; };
+		67D1EC7C2C6E5B4400A2A2B6 /* GSAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC7B2C6E5B4400A2A2B6 /* GSAlertVC.swift */; };
+		67D1EC7F2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC7E2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift */; };
+		67D1EC842C6E5BDB00A2A2B6 /* GSTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC832C6E5BDB00A2A2B6 /* GSTitleLabel.swift */; };
+		67D1EC862C6E5BF400A2A2B6 /* GSBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC852C6E5BF400A2A2B6 /* GSBodyLabel.swift */; };
+		67D1EC882C6E5C8100A2A2B6 /* GSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC872C6E5C8100A2A2B6 /* GSButton.swift */; };
+		67D1EC8B2C6E5D3100A2A2B6 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC8A2C6E5D3100A2A2B6 /* UIView+Ext.swift */; };
+		67D1EC8D2C6E5E7500A2A2B6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC8C2C6E5E7500A2A2B6 /* UIViewController+Ext.swift */; };
+		67D1EC902C6E604F00A2A2B6 /* GSDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */; };
+		67D1EC942C6E71E200A2A2B6 /* GSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */; };
+		67D1EC962C6E72E700A2A2B6 /* AppLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC952C6E72E700A2A2B6 /* AppLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +53,6 @@
 		67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		67D1EC402C6E37A700A2A2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67D1EC432C6E37A700A2A2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D1EC482C6E37A800A2A2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D1EC4A2C6E37A800A2A2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +61,20 @@
 		67D1EC592C6E37A800A2A2B6 /* GymSharkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymSharkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1EC5D2C6E37A800A2A2B6 /* GymSharkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSharkUITests.swift; sourceTree = "<group>"; };
 		67D1EC5F2C6E37A800A2A2B6 /* GymSharkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymSharkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67D1EC722C6E3DD100A2A2B6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		67D1EC742C6E45A500A2A2B6 /* GymsharkProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymsharkProducts.swift; sourceTree = "<group>"; };
+		67D1EC762C6E49B200A2A2B6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		67D1EC782C6E4A6000A2A2B6 /* GSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSError.swift; sourceTree = "<group>"; };
+		67D1EC7B2C6E5B4400A2A2B6 /* GSAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAlertVC.swift; sourceTree = "<group>"; };
+		67D1EC7E2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSAlertContainerView.swift; sourceTree = "<group>"; };
+		67D1EC832C6E5BDB00A2A2B6 /* GSTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTitleLabel.swift; sourceTree = "<group>"; };
+		67D1EC852C6E5BF400A2A2B6 /* GSBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSBodyLabel.swift; sourceTree = "<group>"; };
+		67D1EC872C6E5C8100A2A2B6 /* GSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSButton.swift; sourceTree = "<group>"; };
+		67D1EC8A2C6E5D3100A2A2B6 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		67D1EC8C2C6E5E7500A2A2B6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDataLoadingVC.swift; sourceTree = "<group>"; };
+		67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSCollectionView.swift; sourceTree = "<group>"; };
+		67D1EC952C6E72E700A2A2B6 /* AppLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +125,14 @@
 		67D1EC3B2C6E37A700A2A2B6 /* GymShark */ = {
 			isa = PBXGroup;
 			children = (
-				67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */,
-				67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */,
-				67D1EC402C6E37A700A2A2B6 /* ViewController.swift */,
-				67D1EC422C6E37A700A2A2B6 /* Main.storyboard */,
-				67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */,
-				67D1EC472C6E37A800A2A2B6 /* LaunchScreen.storyboard */,
+				67D1EC702C6E3D9900A2A2B6 /* Managers */,
+				67D1EC912C6E62C300A2A2B6 /* ViewModels */,
+				67D1EC6F2C6E3D8F00A2A2B6 /* Models */,
+				67D1EC712C6E3DBC00A2A2B6 /* Utilities */,
+				67D1EC892C6E5CFE00A2A2B6 /* Extensions */,
+				67D1EC6E2C6E3D0300A2A2B6 /* CustomViews */,
+				67D1EC6C2C6E380300A2A2B6 /* Screens */,
+				67D1EC6D2C6E38A700A2A2B6 /* Support */,
 				67D1EC4A2C6E37A800A2A2B6 /* Info.plist */,
 			);
 			path = GymShark;
@@ -125,6 +153,137 @@
 				67D1EC5F2C6E37A800A2A2B6 /* GymSharkUITestsLaunchTests.swift */,
 			);
 			path = GymSharkUITests;
+			sourceTree = "<group>";
+		};
+		67D1EC6C2C6E380300A2A2B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC402C6E37A700A2A2B6 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		67D1EC6D2C6E38A700A2A2B6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */,
+				67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */,
+				67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */,
+				67D1EC472C6E37A800A2A2B6 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		67D1EC6E2C6E3D0300A2A2B6 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC922C6E660D00A2A2B6 /* CollectionViews */,
+				67D1EC8E2C6E5EED00A2A2B6 /* AlertControllers */,
+				67D1EC822C6E5BAB00A2A2B6 /* ImageViews */,
+				67D1EC812C6E5BA400A2A2B6 /* Buttons */,
+				67D1EC802C6E5B9A00A2A2B6 /* Labels */,
+				67D1EC7D2C6E5B4800A2A2B6 /* Views */,
+				67D1EC7A2C6E5AC200A2A2B6 /* ViewControllers */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		67D1EC6F2C6E3D8F00A2A2B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC742C6E45A500A2A2B6 /* GymsharkProducts.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67D1EC702C6E3D9900A2A2B6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC722C6E3DD100A2A2B6 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		67D1EC712C6E3DBC00A2A2B6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC762C6E49B200A2A2B6 /* Constants.swift */,
+				67D1EC782C6E4A6000A2A2B6 /* GSError.swift */,
+				67D1EC952C6E72E700A2A2B6 /* AppLayout.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		67D1EC7A2C6E5AC200A2A2B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67D1EC7D2C6E5B4800A2A2B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67D1EC802C6E5B9A00A2A2B6 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC832C6E5BDB00A2A2B6 /* GSTitleLabel.swift */,
+				67D1EC852C6E5BF400A2A2B6 /* GSBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		67D1EC812C6E5BA400A2A2B6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC872C6E5C8100A2A2B6 /* GSButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		67D1EC822C6E5BAB00A2A2B6 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		67D1EC892C6E5CFE00A2A2B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC8A2C6E5D3100A2A2B6 /* UIView+Ext.swift */,
+				67D1EC8C2C6E5E7500A2A2B6 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67D1EC8E2C6E5EED00A2A2B6 /* AlertControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC7E2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift */,
+				67D1EC7B2C6E5B4400A2A2B6 /* GSAlertVC.swift */,
+			);
+			path = AlertControllers;
+			sourceTree = "<group>";
+		};
+		67D1EC912C6E62C300A2A2B6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67D1EC922C6E660D00A2A2B6 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */,
+			);
+			path = CollectionViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +392,6 @@
 			files = (
 				67D1EC462C6E37A800A2A2B6 /* Assets.xcassets in Resources */,
 				67D1EC492C6E37A800A2A2B6 /* Base in Resources */,
-				67D1EC442C6E37A700A2A2B6 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +416,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D1EC732C6E3DD100A2A2B6 /* NetworkManager.swift in Sources */,
+				67D1EC962C6E72E700A2A2B6 /* AppLayout.swift in Sources */,
+				67D1EC8B2C6E5D3100A2A2B6 /* UIView+Ext.swift in Sources */,
+				67D1EC942C6E71E200A2A2B6 /* GSCollectionView.swift in Sources */,
+				67D1EC8D2C6E5E7500A2A2B6 /* UIViewController+Ext.swift in Sources */,
 				67D1EC412C6E37A700A2A2B6 /* ViewController.swift in Sources */,
 				67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */,
+				67D1EC882C6E5C8100A2A2B6 /* GSButton.swift in Sources */,
+				67D1EC792C6E4A6000A2A2B6 /* GSError.swift in Sources */,
 				67D1EC3F2C6E37A700A2A2B6 /* SceneDelegate.swift in Sources */,
+				67D1EC862C6E5BF400A2A2B6 /* GSBodyLabel.swift in Sources */,
+				67D1EC7C2C6E5B4400A2A2B6 /* GSAlertVC.swift in Sources */,
+				67D1EC752C6E45A500A2A2B6 /* GymsharkProducts.swift in Sources */,
+				67D1EC842C6E5BDB00A2A2B6 /* GSTitleLabel.swift in Sources */,
+				67D1EC772C6E49B200A2A2B6 /* Constants.swift in Sources */,
+				67D1EC7F2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift in Sources */,
+				67D1EC902C6E604F00A2A2B6 /* GSDataLoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +469,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		67D1EC422C6E37A700A2A2B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67D1EC432C6E37A700A2A2B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67D1EC472C6E37A800A2A2B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +611,6 @@
 				INFOPLIST_FILE = GymShark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +620,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GymShark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,7 +642,6 @@
 				INFOPLIST_FILE = GymShark/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +651,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.GymShark;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
