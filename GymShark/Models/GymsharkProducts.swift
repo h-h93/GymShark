@@ -8,12 +8,12 @@
 import Foundation
 
 // MARK: - GymsharkProducts
-struct GymsharkProducts: Codable {
+struct GymsharkProducts: Codable, Hashable {
     let hits: [Hit]
 }
 
 // MARK: - Hit
-struct Hit: Codable {
+struct Hit: Codable, Hashable {
     let id: Int
     let sku: String
     let inStock: Bool
@@ -34,7 +34,7 @@ struct Hit: Codable {
 }
 
 // MARK: - AvailableSize
-struct AvailableSize: Codable {
+struct AvailableSize: Codable, Hashable {
     let id: Int
     let inStock: Bool
     let inventoryQuantity, price: Int
@@ -52,7 +52,7 @@ enum Size: String, Codable {
 }
 
 // MARK: - Media
-struct Media: Codable {
+struct Media: Codable, Hashable {
     let adminGraphqlAPIID: String?
     let alt: String?
     let createdAt: Date?

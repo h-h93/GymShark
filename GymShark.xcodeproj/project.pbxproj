@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */; };
 		67D1EC3F2C6E37A700A2A2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */; };
-		67D1EC412C6E37A700A2A2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC402C6E37A700A2A2B6 /* ViewController.swift */; };
+		67D1EC412C6E37A700A2A2B6 /* HomescreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC402C6E37A700A2A2B6 /* HomescreenVC.swift */; };
 		67D1EC462C6E37A800A2A2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */; };
 		67D1EC492C6E37A800A2A2B6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67D1EC482C6E37A800A2A2B6 /* Base */; };
 		67D1EC542C6E37A800A2A2B6 /* GymSharkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC532C6E37A800A2A2B6 /* GymSharkTests.swift */; };
@@ -29,6 +29,8 @@
 		67D1EC902C6E604F00A2A2B6 /* GSDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */; };
 		67D1EC942C6E71E200A2A2B6 /* GSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */; };
 		67D1EC962C6E72E700A2A2B6 /* AppLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC952C6E72E700A2A2B6 /* AppLayout.swift */; };
+		67D1EC9C2C6FF41100A2A2B6 /* HomescreenProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC9B2C6FF41100A2A2B6 /* HomescreenProductsVC.swift */; };
+		67D1EC9F2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC9E2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,7 @@
 		67D1EC392C6E37A700A2A2B6 /* GymShark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymShark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67D1EC402C6E37A700A2A2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67D1EC402C6E37A700A2A2B6 /* HomescreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenVC.swift; sourceTree = "<group>"; };
 		67D1EC452C6E37A800A2A2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67D1EC482C6E37A800A2A2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67D1EC4A2C6E37A800A2A2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSDataLoadingVC.swift; sourceTree = "<group>"; };
 		67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSCollectionView.swift; sourceTree = "<group>"; };
 		67D1EC952C6E72E700A2A2B6 /* AppLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLayout.swift; sourceTree = "<group>"; };
+		67D1EC9B2C6FF41100A2A2B6 /* HomescreenProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenProductsVC.swift; sourceTree = "<group>"; };
+		67D1EC9E2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSProductCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				67D1EC702C6E3D9900A2A2B6 /* Managers */,
-				67D1EC912C6E62C300A2A2B6 /* ViewModels */,
 				67D1EC6F2C6E3D8F00A2A2B6 /* Models */,
 				67D1EC712C6E3DBC00A2A2B6 /* Utilities */,
 				67D1EC892C6E5CFE00A2A2B6 /* Extensions */,
@@ -158,7 +161,7 @@
 		67D1EC6C2C6E380300A2A2B6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				67D1EC402C6E37A700A2A2B6 /* ViewController.swift */,
+				67D1EC402C6E37A700A2A2B6 /* HomescreenVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 		67D1EC6E2C6E3D0300A2A2B6 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				67D1EC9D2C700E6700A2A2B6 /* Cells */,
 				67D1EC922C6E660D00A2A2B6 /* CollectionViews */,
 				67D1EC8E2C6E5EED00A2A2B6 /* AlertControllers */,
 				67D1EC822C6E5BAB00A2A2B6 /* ImageViews */,
@@ -218,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */,
+				67D1EC9B2C6FF41100A2A2B6 /* HomescreenProductsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,19 +276,20 @@
 			path = AlertControllers;
 			sourceTree = "<group>";
 		};
-		67D1EC912C6E62C300A2A2B6 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		67D1EC922C6E660D00A2A2B6 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
 				67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */,
 			);
 			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		67D1EC9D2C700E6700A2A2B6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				67D1EC9E2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,7 +427,8 @@
 				67D1EC8B2C6E5D3100A2A2B6 /* UIView+Ext.swift in Sources */,
 				67D1EC942C6E71E200A2A2B6 /* GSCollectionView.swift in Sources */,
 				67D1EC8D2C6E5E7500A2A2B6 /* UIViewController+Ext.swift in Sources */,
-				67D1EC412C6E37A700A2A2B6 /* ViewController.swift in Sources */,
+				67D1EC412C6E37A700A2A2B6 /* HomescreenVC.swift in Sources */,
+				67D1EC9C2C6FF41100A2A2B6 /* HomescreenProductsVC.swift in Sources */,
 				67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */,
 				67D1EC882C6E5C8100A2A2B6 /* GSButton.swift in Sources */,
 				67D1EC792C6E4A6000A2A2B6 /* GSError.swift in Sources */,
@@ -430,6 +437,7 @@
 				67D1EC7C2C6E5B4400A2A2B6 /* GSAlertVC.swift in Sources */,
 				67D1EC752C6E45A500A2A2B6 /* GymsharkProducts.swift in Sources */,
 				67D1EC842C6E5BDB00A2A2B6 /* GSTitleLabel.swift in Sources */,
+				67D1EC9F2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift in Sources */,
 				67D1EC772C6E49B200A2A2B6 /* Constants.swift in Sources */,
 				67D1EC7F2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift in Sources */,
 				67D1EC902C6E604F00A2A2B6 /* GSDataLoadingVC.swift in Sources */,

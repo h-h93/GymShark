@@ -15,15 +15,14 @@ final class NetworkManager {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
     }
     
-    func getProducts() async throws -> GymsharkProducts {
-        guard let url = URL(string: BaseURL.gymsharkProductsURL.rawValue + "9") else { throw GSError.invalidURL }
+    func fetchProducts <T: Decodable>() async throws -> T {
+        guard let url = URL(string: BaseURL.gymsharkProductsURL.rawValue) else { throw GSError.invalidURL }
 
         let (data, response) = try await URLSession.shared.data(from: url)
         guard let response = response as? HTTPURLResponse, response.statusCode == 200 else { throw GSError.unableToCompleteRequest }
         
         do {
-            //print(String(decoding: data, as: UTF8.self))
-            return try decoder.decode(GymsharkProducts.self, from: data)
+            return try decoder.decode(T.self, from: data)
         } catch {
             throw GSError.decodingFailed
         }

@@ -10,6 +10,22 @@ import UIKit
 class AppLayout {
     static let shared = AppLayout()
     
+    func setTwoxTwoCompositionalLayout() -> UICollectionViewCompositionalLayout {
+        let leftPanel = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        leftPanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
+        let rightanel = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
+        rightanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
+        
+        let leftAndRightPanelGroupVertical = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)), subitems: [leftPanel, rightanel])
+        
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5)), subitems: [leftAndRightPanelGroupVertical])
+        
+        let container = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)), subitems: [group])
+        let section = NSCollectionLayoutSection(group: container)
+        let compositionalLayout = UICollectionViewCompositionalLayout(section: section)
+        return compositionalLayout
+    }
+    
     func defaultSectionLayout() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -22,19 +38,6 @@ class AppLayout {
         section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0)
         section.orthogonalScrollingBehavior = .continuous
         
-        // create header and footer for section
-        let footerHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(50.0))
-        
-        let header = NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: footerHeaderSize,
-            elementKind: UICollectionView.elementKindSectionHeader,
-            alignment: .top)
-        let footer = NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: footerHeaderSize,
-            elementKind: UICollectionView.elementKindSectionFooter,
-            alignment: .bottom)
-        section.boundarySupplementaryItems = [header, footer]
-        // section.boundarySupplementaryItems = [header]
         return section
     }
     
