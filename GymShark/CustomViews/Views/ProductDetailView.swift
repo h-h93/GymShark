@@ -109,7 +109,7 @@ class ProductDetailView: UIView, UITableViewDataSource, UITableViewDelegate {
             
             sizeLabels.first!.centerYAnchor.constraint(equalTo: sizeContainerView.centerYAnchor),
             sizeLabels.first!.leadingAnchor.constraint(equalTo: sizeContainerView.leadingAnchor, constant: 10),
-            sizeLabels.first!.widthAnchor.constraint(equalToConstant: 25),
+            sizeLabels.first!.widthAnchor.constraint(equalToConstant: 22),
             sizeLabels.first!.heightAnchor.constraint(equalToConstant: 20),
         ])
 
@@ -117,7 +117,7 @@ class ProductDetailView: UIView, UITableViewDataSource, UITableViewDelegate {
             NSLayoutConstraint.activate([
                 sizeLabels[index].centerYAnchor.constraint(equalTo: sizeContainerView.centerYAnchor),
                 sizeLabels[index].leadingAnchor.constraint(equalTo: sizeLabels[index-1].trailingAnchor, constant: 25),
-                sizeLabels[index].widthAnchor.constraint(equalToConstant: 25),
+                sizeLabels[index].widthAnchor.constraint(equalToConstant: 22),
                 sizeLabels[index].heightAnchor.constraint(equalToConstant: 20),
             ])
         }
