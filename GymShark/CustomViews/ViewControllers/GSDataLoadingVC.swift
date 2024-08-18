@@ -9,12 +9,10 @@ import UIKit
 
 class GSDataLoadingVC: UIViewController {
     var containerView: UIView!
-    var gradientLayer = CAGradientLayer()
     
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        gradientLayer.frame = view.bounds
     }
     
     

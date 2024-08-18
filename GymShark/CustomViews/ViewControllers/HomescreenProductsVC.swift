@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomescreenCollectionViewDelegate: AnyObject {
+    func loadProductInfo(product: Hit)
+}
+
 class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
     enum Section {
         case main
@@ -14,6 +18,7 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
     var collectionView: GSCollectionView!
     var products = [Hit]()
     var dataSource: UICollectionViewDiffableDataSource<Section, Hit>!
+    weak var homescreenCollectionDelegate: HomescreenCollectionViewDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,26 +30,25 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
     
     
     func configure() {
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .systemBackground
         view.translatesAutoresizingMaskIntoConstraints = false
     }
     
     
     private func configureCollectionView() {
-        let layout = AppLayout.shared.setTwoxTwoCompositionalLayout()
-        collectionView = GSCollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
+        collectionView = GSCollectionView(frame: .zero, collectionViewLayout: AppLayout.shared.twoGridLayout(in: view))
+        collectionView.register(GSProductCollectionViewCell.self, forCellWithReuseIdentifier: GSProductCollectionViewCell.reuseID)
         collectionView.delegate = self
         collectionView.dataSource = dataSource
         view.addSubview(collectionView)
-        collectionView.pinToEdges(of: self.view)
+        collectionView.pinToSafeAreaEdges(of: self.view)
     }
     
     
     func configureDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, Hit>(collectionView: collectionView) { collectionView, indexPath, item in
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! UICollectionViewCell
-            cell.backgroundColor = .random
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GSProductCollectionViewCell.reuseID, for: indexPath) as! GSProductCollectionViewCell
+            cell.set(product: item)
             return cell
         }
     }
@@ -71,15 +75,22 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
         snapshot.appendItems(products, toSection: .main)
         DispatchQueue.main.async{[weak self] in self?.dataSource.applySnapshotUsingReloadData(snapshot, completion: nil)}
     }
-
-}
-
-
-extension UIColor {
-    static var random: UIColor {
-        return UIColor(red: .random(in: 0.4...1),
-                       green: .random(in: 0.4...1),
-                       blue: .random(in: 0.4...1),
-                       alpha: 1)
+    
+    
+    // pagination func
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        if offsetY > contentHeight - height {
+            
+        }
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        homescreenCollectionDelegate.loadProductInfo(product: self.products[indexPath.item])
+    }
+
 }

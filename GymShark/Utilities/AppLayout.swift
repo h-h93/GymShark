@@ -12,9 +12,9 @@ class AppLayout {
     
     func setTwoxTwoCompositionalLayout() -> UICollectionViewCompositionalLayout {
         let leftPanel = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-        leftPanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
+        leftPanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
         let rightanel = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
-        rightanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5)
+        rightanel.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
         
         let leftAndRightPanelGroupVertical = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1)), subitems: [leftPanel, rightanel])
         
@@ -25,6 +25,7 @@ class AppLayout {
         let compositionalLayout = UICollectionViewCompositionalLayout(section: section)
         return compositionalLayout
     }
+    
     
     func defaultSectionLayout() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
@@ -59,14 +60,14 @@ class AppLayout {
     
     func twoGridLayout(in view: UIView) -> UICollectionViewLayout {
         let width = view.bounds.width
-        let padding: CGFloat = 10
-        let minimumItemSpacing: CGFloat = 10
+        let padding: CGFloat = 5
+        let minimumItemSpacing: CGFloat = 1
         let availableWidth = width - (padding * 2) - (minimumItemSpacing * 2)
         let itemWidth = availableWidth / 2
-        let height = itemWidth + 100
+        let height = itemWidth + 150
         
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: 0, bottom: padding, right: 1)
         flowLayout.itemSize = CGSize(width: itemWidth, height: height)
         return flowLayout
     }

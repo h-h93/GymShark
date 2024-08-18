@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomescreenVC: UIViewController {
+class HomescreenVC: UIViewController, HomescreenCollectionViewDelegate {
     private var homescreenProductsVC = HomescreenProductsVC()
     
     override func viewDidLoad() {
@@ -20,8 +20,15 @@ class HomescreenVC: UIViewController {
         view.backgroundColor = .systemBackground
         addChild(homescreenProductsVC)
         view.addSubview(homescreenProductsVC.view)
-        homescreenProductsVC.view.pinToEdges(of: view)
+        homescreenProductsVC.view.pinToSafeAreaEdges(of: view)
         homescreenProductsVC.didMove(toParent: self)
+        homescreenProductsVC.homescreenCollectionDelegate = self
+    }
+    
+    
+    func loadProductInfo(product: Hit) {
+        let productInfoView = ProductInformationVC(product: product)
+        self.navigationController?.pushViewController(productInfoView, animated: true)
     }
 
 }

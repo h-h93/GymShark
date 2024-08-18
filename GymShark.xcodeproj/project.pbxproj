@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672DFA342C7011CD00FF3653 /* GSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA332C7011CD00FF3653 /* GSImageView.swift */; };
+		672DFA362C72453800FF3653 /* ProductInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA352C72453800FF3653 /* ProductInformationVC.swift */; };
+		672DFA382C7245D500FF3653 /* GSProductImageSlidesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA372C7245D500FF3653 /* GSProductImageSlidesCollectionView.swift */; };
+		672DFA3A2C724C6E00FF3653 /* ProductInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA392C724C6E00FF3653 /* ProductInformationView.swift */; };
+		672DFA3C2C724FD000FF3653 /* GSSlideshowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA3B2C724FD000FF3653 /* GSSlideshowCell.swift */; };
+		672DFA3E2C728B7B00FF3653 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA3D2C728B7B00FF3653 /* ProductDetailView.swift */; };
+		672DFA402C72A13A00FF3653 /* GSSubTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA3F2C72A13A00FF3653 /* GSSubTextView.swift */; };
+		672DFA422C72A9C400FF3653 /* ProductDescriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA412C72A9C400FF3653 /* ProductDescriptionVC.swift */; };
+		672DFA442C72ABB600FF3653 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672DFA432C72ABB600FF3653 /* String+Ext.swift */; };
 		67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */; };
 		67D1EC3F2C6E37A700A2A2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */; };
 		67D1EC412C6E37A700A2A2B6 /* HomescreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1EC402C6E37A700A2A2B6 /* HomescreenVC.swift */; };
@@ -51,6 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672DFA332C7011CD00FF3653 /* GSImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSImageView.swift; sourceTree = "<group>"; };
+		672DFA352C72453800FF3653 /* ProductInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationVC.swift; sourceTree = "<group>"; };
+		672DFA372C7245D500FF3653 /* GSProductImageSlidesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSProductImageSlidesCollectionView.swift; sourceTree = "<group>"; };
+		672DFA392C724C6E00FF3653 /* ProductInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInformationView.swift; sourceTree = "<group>"; };
+		672DFA3B2C724FD000FF3653 /* GSSlideshowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSlideshowCell.swift; sourceTree = "<group>"; };
+		672DFA3D2C728B7B00FF3653 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		672DFA3F2C72A13A00FF3653 /* GSSubTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSubTextView.swift; sourceTree = "<group>"; };
+		672DFA412C72A9C400FF3653 /* ProductDescriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionVC.swift; sourceTree = "<group>"; };
+		672DFA432C72ABB600FF3653 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		67D1EC392C6E37A700A2A2B6 /* GymShark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymShark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67D1EC3C2C6E37A700A2A2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67D1EC3E2C6E37A700A2A2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1EC402C6E37A700A2A2B6 /* HomescreenVC.swift */,
+				672DFA352C72453800FF3653 /* ProductInformationVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -223,6 +242,7 @@
 			children = (
 				67D1EC8F2C6E604F00A2A2B6 /* GSDataLoadingVC.swift */,
 				67D1EC9B2C6FF41100A2A2B6 /* HomescreenProductsVC.swift */,
+				672DFA412C72A9C400FF3653 /* ProductDescriptionVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -230,6 +250,8 @@
 		67D1EC7D2C6E5B4800A2A2B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				672DFA392C724C6E00FF3653 /* ProductInformationView.swift */,
+				672DFA3D2C728B7B00FF3653 /* ProductDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +261,7 @@
 			children = (
 				67D1EC832C6E5BDB00A2A2B6 /* GSTitleLabel.swift */,
 				67D1EC852C6E5BF400A2A2B6 /* GSBodyLabel.swift */,
+				672DFA3F2C72A13A00FF3653 /* GSSubTextView.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -254,6 +277,7 @@
 		67D1EC822C6E5BAB00A2A2B6 /* ImageViews */ = {
 			isa = PBXGroup;
 			children = (
+				672DFA332C7011CD00FF3653 /* GSImageView.swift */,
 			);
 			path = ImageViews;
 			sourceTree = "<group>";
@@ -263,6 +287,7 @@
 			children = (
 				67D1EC8A2C6E5D3100A2A2B6 /* UIView+Ext.swift */,
 				67D1EC8C2C6E5E7500A2A2B6 /* UIViewController+Ext.swift */,
+				672DFA432C72ABB600FF3653 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1EC932C6E71E200A2A2B6 /* GSCollectionView.swift */,
+				672DFA372C7245D500FF3653 /* GSProductImageSlidesCollectionView.swift */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -288,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				67D1EC9E2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift */,
+				672DFA3B2C724FD000FF3653 /* GSSlideshowCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -426,18 +453,27 @@
 				67D1EC962C6E72E700A2A2B6 /* AppLayout.swift in Sources */,
 				67D1EC8B2C6E5D3100A2A2B6 /* UIView+Ext.swift in Sources */,
 				67D1EC942C6E71E200A2A2B6 /* GSCollectionView.swift in Sources */,
+				672DFA3C2C724FD000FF3653 /* GSSlideshowCell.swift in Sources */,
+				672DFA342C7011CD00FF3653 /* GSImageView.swift in Sources */,
 				67D1EC8D2C6E5E7500A2A2B6 /* UIViewController+Ext.swift in Sources */,
 				67D1EC412C6E37A700A2A2B6 /* HomescreenVC.swift in Sources */,
 				67D1EC9C2C6FF41100A2A2B6 /* HomescreenProductsVC.swift in Sources */,
 				67D1EC3D2C6E37A700A2A2B6 /* AppDelegate.swift in Sources */,
 				67D1EC882C6E5C8100A2A2B6 /* GSButton.swift in Sources */,
+				672DFA362C72453800FF3653 /* ProductInformationVC.swift in Sources */,
 				67D1EC792C6E4A6000A2A2B6 /* GSError.swift in Sources */,
+				672DFA382C7245D500FF3653 /* GSProductImageSlidesCollectionView.swift in Sources */,
+				672DFA3A2C724C6E00FF3653 /* ProductInformationView.swift in Sources */,
 				67D1EC3F2C6E37A700A2A2B6 /* SceneDelegate.swift in Sources */,
+				672DFA422C72A9C400FF3653 /* ProductDescriptionVC.swift in Sources */,
 				67D1EC862C6E5BF400A2A2B6 /* GSBodyLabel.swift in Sources */,
 				67D1EC7C2C6E5B4400A2A2B6 /* GSAlertVC.swift in Sources */,
 				67D1EC752C6E45A500A2A2B6 /* GymsharkProducts.swift in Sources */,
 				67D1EC842C6E5BDB00A2A2B6 /* GSTitleLabel.swift in Sources */,
+				672DFA402C72A13A00FF3653 /* GSSubTextView.swift in Sources */,
+				672DFA442C72ABB600FF3653 /* String+Ext.swift in Sources */,
 				67D1EC9F2C700EA900A2A2B6 /* GSProductCollectionViewCell.swift in Sources */,
+				672DFA3E2C728B7B00FF3653 /* ProductDetailView.swift in Sources */,
 				67D1EC772C6E49B200A2A2B6 /* Constants.swift in Sources */,
 				67D1EC7F2C6E5B5F00A2A2B6 /* GSAlertContainerView.swift in Sources */,
 				67D1EC902C6E604F00A2A2B6 /* GSDataLoadingVC.swift in Sources */,
