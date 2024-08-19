@@ -16,8 +16,8 @@ class ProductDetailView: UIView, UITableViewDataSource, UITableViewDelegate {
     var sizes = [
         "XXS", "XS", "S", "M", "L", "XL", "XXL"
     ]
-    var sizeHeading = GSSubTextView(textAlignment: .left, fontSize: 14)
-    var sizeLabels = [GSSubTextView]()
+    var sizeHeading = GSSubTextLabel(textAlignment: .left, fontSize: 14)
+    var sizeLabels = [GSSubTextLabel]()
     var tableView = UITableView()
     var buyButton = GSButton(colour: .systemBlue, title: "BUY NOW", systemImageName: "")
     var tableViewHeadings = ["DESCRIPTION"]
@@ -82,7 +82,7 @@ class ProductDetailView: UIView, UITableViewDataSource, UITableViewDelegate {
         addSubviews(sizeContainerView, sizeHeading)
         
         for size in sizes {
-            let label = GSSubTextView(textAlignment: .center, fontSize: 12)
+            let label = GSSubTextLabel(textAlignment: .center, fontSize: 12)
             if checkSizeInStock(size: size) {
                 let attributedText = NSAttributedString(
                     string: "\(size)",
@@ -112,7 +112,7 @@ class ProductDetailView: UIView, UITableViewDataSource, UITableViewDelegate {
             sizeLabels.first!.widthAnchor.constraint(equalToConstant: 22),
             sizeLabels.first!.heightAnchor.constraint(equalToConstant: 20),
         ])
-
+        
         for index in 1...6 {
             NSLayoutConstraint.activate([
                 sizeLabels[index].centerYAnchor.constraint(equalTo: sizeContainerView.centerYAnchor),

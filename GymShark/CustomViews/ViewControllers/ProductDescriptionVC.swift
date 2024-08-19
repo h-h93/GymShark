@@ -21,7 +21,7 @@ class ProductDescriptionVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -32,7 +32,6 @@ class ProductDescriptionVC: UIViewController {
     func configure() {
         view.backgroundColor = .systemBackground
     }
-    
     
     
     func configureLabel() {

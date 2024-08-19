@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GSSubTextView: UILabel {
+class GSSubTextLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

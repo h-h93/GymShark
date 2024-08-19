@@ -30,6 +30,6 @@ class HomescreenVC: UIViewController, HomescreenCollectionViewDelegate {
         let productInfoView = ProductInformationVC(product: product)
         self.navigationController?.pushViewController(productInfoView, animated: true)
     }
-
+    
 }
 

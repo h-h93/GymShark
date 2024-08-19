@@ -19,7 +19,21 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
     var products = [Hit]()
     var dataSource: UICollectionViewDiffableDataSource<Section, Hit>!
     weak var homescreenCollectionDelegate: HomescreenCollectionViewDelegate!
-
+    var networkManager: NetworkManager
+    
+    // dependancy injection
+    init(networkManager: NetworkManager = NetworkManager.shared) {
+        self.networkManager = networkManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        self.networkManager = NetworkManager.shared
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -52,14 +66,14 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
             return cell
         }
     }
-
+    
     
     func configureData() {
         showLoadingView()
         defer { dismissLoadingView() }
         Task {
             do {
-                let productList: GymsharkProducts = try await NetworkManager.shared.fetchProducts()
+                let productList: GymsharkProducts = try await networkManager.fetchProducts()
                 products = productList.hits
                 updateProductList()
             } catch {
@@ -92,5 +106,5 @@ class HomescreenProductsVC: GSDataLoadingVC, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         homescreenCollectionDelegate.loadProductInfo(product: self.products[indexPath.item])
     }
-
+    
 }

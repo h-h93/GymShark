@@ -10,8 +10,8 @@ import UIKit
 class GSProductCollectionViewCell: UICollectionViewCell {
     private let imageView = GSImageView(contentMode: .scaleAspectFill)
     private let titleLabel = GSTitleLabel(textAlignment: .left, fontSize: 16)
-    private let colourLabel = GSBodyLabel(textAlignment: .left)
-    private let productLabels = GSBodyLabel(textAlignment: .left)
+    private let colourLabel = GSSubTextLabel(textAlignment: .left, fontSize: 12)
+    private let productLabels = GSSubTextLabel(textAlignment: .left, fontSize: 12)
     private let priceLabel = GSTitleLabel(textAlignment: .left, fontSize: 16)
     private let padding: CGFloat = 7
     static let reuseID = "Cell"
@@ -20,7 +20,7 @@ class GSProductCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         configure()
     }
-
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -28,8 +28,9 @@ class GSProductCollectionViewCell: UICollectionViewCell {
     
     
     private func configure() {
+        colourLabel.minimumScaleFactor = 0.60
         addSubviews(imageView, titleLabel, productLabels, colourLabel, priceLabel)
-
+        
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
             imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
@@ -49,12 +50,12 @@ class GSProductCollectionViewCell: UICollectionViewCell {
             colourLabel.topAnchor.constraint(equalTo: productLabels.bottomAnchor, constant: padding),
             colourLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 4),
             colourLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            colourLabel.heightAnchor.constraint(lessThanOrEqualToConstant: 30),
+            colourLabel.heightAnchor.constraint(lessThanOrEqualToConstant: 40),
             
             priceLabel.topAnchor.constraint(equalTo: colourLabel.bottomAnchor, constant: padding + 5),
             priceLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 4),
             priceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -padding),
-            priceLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            priceLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -2),
         ])
     }
     

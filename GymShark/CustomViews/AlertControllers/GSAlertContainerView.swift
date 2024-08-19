@@ -8,7 +8,7 @@
 import UIKit
 
 class GSAlertContainerView: UIView {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -26,5 +26,5 @@ class GSAlertContainerView: UIView {
         backgroundColor = .systemBackground
         translatesAutoresizingMaskIntoConstraints = false
     }
-
+    
 }
